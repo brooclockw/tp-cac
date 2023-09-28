@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDIT ITEM | Funkoshop</title>
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- INICIO HEADER -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid d-flex align-items-center">
+          <a href="../index.html">
+            <img
+              src="../img/branding/logo_light_horizontal.svg"
+              alt="Isologotipo de la marca Funkoshop"
+              width="auto"
+              height="25"
+              class="d-inline-block"
+            />
+          </a>
+          <button
+            class="navbar-toggler align-items-center"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <div class="d-flex row align-items-center">
+              <ul class="navbar-nav me-2 align-items-center">
+                <li class="nav-item custom-navtext">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item custom-navtext">
+                  <a class="nav-link" href="/pages/contacto.html">CONTACT</a>
+                </li>
+                <li class="nav-item custom-navtext">
+                  <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                </li>
+                <li class="nav-item custom-navtext">
+                  <a class="nav-link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="nav-item custom-navtext">
+                  <a class="nav-link" href="./pages/login.html">LOGIN</a>
+                </li>
+
+                <li class="nav-item custom-navtext dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="/img/icons/person-circle-outline.svg"
+                      alt="user icon"
+                      id="user-icon"
+                    />
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/pages/login.html"
+                        >LOGIN</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/pages/register.html"
+                        >REGISTER</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/pages/cartitem.html"
+                        >SHOP CART</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">PURO FUNKO LINDO</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item custom-navtext">
+                  <a class="nav-link" href="./pages/cartitem.html">
+                    <img
+                      src="../img/icons/cart-icon.svg"
+                      alt="icono de carrito"
+                      width="auto"
+                      height="16"
+                      class="d-inline-block align-text-top"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- FIN HEADER -->
+
+    <!-- SECCION PRINCIPAL DE LA WEB -->
+    <main>
+      <h1>EDITAR ITEM</h1>
+      <nav>
+        <label for="category">Categoría: </label>
+        <select name="category" id="category">
+          <option value="figuras">Figuras</option>
+        </select>
+
+        <label for="license">Licencia: </label>
+        <select name="license" id="license">
+          <option value="naruto shippuden">Naruto Shippuden</option>
+        </select>
+      </nav>
+
+      <div>
+        <label for="name">Nombre del producto:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Kakashi Hatake Shippuden Saga"
+        />
+      </div>
+
+      <div>
+        <label for="description"></label>
+        <textarea name="description" id="description"></textarea>
+      </div>
+
+      <div>
+        <label for="sku">SKU:</label>
+        <input type="text" id="sku" value="NAR001012" />
+
+        <label for="price">Precio:</label>
+        <input type="text" id="price" value="$ 1.799,00" />
+
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" value="10" min="0" />
+      </div>
+
+      <div>
+        <label for="descuento">Descuento:</label>
+        <input type="text" id="descuento" value="10%" />
+
+        <label for="cuotas">Cuotas: </label>
+        <select name="cuotas" id="cuotas">
+          <option value="6">6 Coutas sin interés</option>
+        </select>
+      </div>
+
+      <div>
+        <section>
+          <img src="img/naruto/kakashi_hatake_front.svg" alt="figura-frente" />
+          <hr />
+          <span>Frente</span>
+        </section>
+        <section>
+          <img src="img/naruto/kakashi_hatake_back.svg" alt="figura-dorso" />
+          <hr />
+          <span>Dorso</span>
+        </section>
+      </div>
+
+      <div>
+        <input type="file" />
+      </div>
+
+      <div>
+        <button type="submit">Modificar Producto</button>
+      </div>
+    </main>
+    <!-- FIN DE LA SECCION PRINCIPAL DE LA WEB  -->
+
+    <!--INICIO FOOTER -->
+    <footer>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="./pages/shop.html">SHOP</a></li>
+            <li><a href="./pages/register.html">REGISTRARSE</a></li>
+            <li><a href="./pages/login.html">LOGIN</a></li>
+            <li><a href="./pages/contacto.html">CONTACTO</a></li>
+          </ul>
+          <picture>
+            <img
+              src="./img/branding/isotype.svg"
+              alt="Isotipo de la marca Funkoshop"
+            />
+          </picture>
+        </nav>
+      </section>
+      <p>All rights reserved 2023 - Funkoshop & copyright</p>
+    </footer>
+    <!--FIN FOOTER -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

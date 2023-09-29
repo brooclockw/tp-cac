@@ -132,7 +132,7 @@ li+a+.nav-item {
 }
 
 #wrap-banner {
-    width: 100vw;
+    /* width: 100vw;  genera scroll lateral por el background-size cover*/ 
     padding: 70px 0px;
     display: flex;
     align-items: flex-start;

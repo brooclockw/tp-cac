@@ -121,7 +121,7 @@ li+a+.nav-item {
 
 
 #user-icon {
-    width: 2vw;
+    width: 28px;
     height: auto;
 }
 
@@ -132,7 +132,7 @@ li+a+.nav-item {
 }
 
 #wrap-banner {
-    /* width: 100vw;  genera scroll lateral por el background-size cover*/ 
+    /* width: 100vw;  genera scroll lateral por el background-size cover*/
     padding: 70px 0px;
     display: flex;
     align-items: flex-start;
@@ -292,4 +292,65 @@ li+a+.nav-item {
 .custom-text-footer {
     margin-left: 15px;
     font-weight: normal;
+}
+
+/* ASIDE SECTION  */
+.aside-section-shop {
+    margin-top: 65px;
+    margin-left: 25px;
+    /* padding: 25px;
+    height: 45vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--dark-solid);
+}
+
+#search-icon {
+    width: 20px;
+    display: inline-block;
+}
+
+.aside-text {
+    font-size: var(--font-medium);
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.filter-check-shop {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: stretch;
+    padding: 5px;
+}
+
+.check-shop-item {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: var(--font-xsmall);
+}
+
+#min,
+#max {
+    font-size: var(--font-xsmall);
+}
+
+.input-shop {
+    border-radius: 5px;
+    border: inset;
+    padding: 2px 3px;
+
+}
+
+.checkbox-input {
+    accent-color: var(--primary-solid);
+}
+
+.page-link,
+.page-link:visited {
+    background-color: var(--dark-bg-solid) !important;
+    color: var(--light-font-solid);
+    text-decoration: none;
 }

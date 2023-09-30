@@ -114,51 +114,96 @@
     <!-- FIN HEADER -->
 
     <!-- SECCION PRINCIPAL DE LA WEB -->
-    
+
     <main class="d-flex row">
-    
       <!-- ASIDE SECTION / FILTER SECTION -->
-      <aside class="col-2">
-        <div>
-          <h5>BUSCAR</h5>
-          <input type="text" id="search" placeholder="Ítem o Categoría" />
-        </div>
+      <aside class="col-3 container-fluid">
+        <section class="aside-section-shop">
+          <div class="filter-check-shop">
+            <h5 class="aside-text">BUSCAR</h5>
+            <div class="d-flex">
+              <input
+                class="input-shop"
+                type="text"
+                id="search"
+                placeholder="Ítem o Categoría"
+              />
+              <a href="#" for="search"
+                ><img
+                  src="../img/icons/search_icon.svg"
+                  alt="icono de busqueda"
+                  id="search-icon"
+                  for="search"
+              /></a>
+            </div>
+          </div>
 
-        <div>
-          <h5>ORDENAR POR</h5>
-          <select name="license" id="license">
-            <option value="mayor a menor" selected>Mayor a menor</option>
-            <option value="menor a mayor">Menor a mayor</option>
-          </select>
-        </div>
+          <div class="filter-check-shop">
+            <h5 class="aside-text">ORDENAR POR</h5>
+            <select
+              class="check-shop-item input-shop"
+              name="license"
+              id="license"
+              placeholder="jksdaksjd"
+            >
+              <option value="mayor a menor" selected disabled>
+                Elige una opcion
+              </option>
+              <option value="mayor a menor">Mayor a menor</option>
+              <option value="menor a mayor">Menor a mayor</option>
+            </select>
+          </div>
 
-        <div>
-          <h5>PRECIO</h5>
-          <label for="min">MIN</label>
-          <input type="number" id="min" value="0" min="0" />
+          <div class="filter-check-shop">
+            <h5 class="aside-text">PRECIO</h5>
+            <label for="min">MIN</label>
+            <input
+              class="input-shop"
+              type="number"
+              id="min"
+              value="0"
+              min="0"
+            />
 
-          <label for="max">MAX</label>
-          <input type="number" id="max" value="0" min="0" />
-        </div>
+            <label for="max">MAX</label>
+            <input
+              class="input-shop"
+              type="number"
+              id="max"
+              value="0"
+              min="0"
+            />
+          </div>
 
-        <div>
-          <h5>FILTRAR</h5>
-          <input type="checkbox" id="checkbox" />
-          <label for="checkbox">NUEVOS</label>
-
-          <input type="checkbox" id="checkbox" />
-          <label for="checkbox">OFERTAS</label>
-
-          <input type="checkbox" id="checkbox" />
-          <label for="checkbox">EDICIÓN ESPECIAL</label>
-
-          <input type="checkbox" id="checkbox" />
-          <label for="checkbox">FAVORITOS</label>
-        </div>
+          <div class="container-fluid">
+            <h5 class="aside-text">FILTRAR</h5>
+            <div class="filter-check-shop">
+              <div class="check-shop-item">
+                <input class="input-shop checkbox-input" type="checkbox" id="checkbox-1" />
+                <label for="checkbox-1">NUEVOS</label>
+              </div>
+              <div class="check-shop-item">
+                <input class="input-shop checkbox-input" type="checkbox" id="checkbox-2" />
+                <label for="checkbox-2">OFERTAS</label>
+              </div>
+              <div class="check-shop-item">
+                <input class="input-shop checkbox-input" type="checkbox" id="checkbox-3" />
+                <label for="checkbox-3">EDICIÓN ESPECIAL</label>
+              </div>
+              <div class="check-shop-item">
+                <input class="input-shop checkbox-input" type="checkbox" id="checkbox-4" />
+                <label for="checkbox-4">FAVORITOS</label>
+              </div>
+            </div>
+            <a href="shop.html" type="button" class="see-collection"
+              >Limpiar filtros</a
+            >
+          </div>
+        </section>
       </aside>
       <!-- ASIDE ENDs -->
       <!-- MAIN SECTION / ITEMS -->
-      <section class="col-10 container-fluid">
+      <section class="col-9 container-fluid">
         <h2 class="releases-tittle">Últimos lanzamientos</h2>
         <ul class="d-flex row container-fluid">
           <li class="col-4">
@@ -353,15 +398,23 @@
         </ul>
       </section>
 
-      <div class="col-12 justify-content-center">
-        <button type="button">&#60;</button>
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">...</button>
-        <button type="button">9</button>
-        <button type="button">10</button>
-        <button type="button">&#62;</button>
-      </div>
+      <nav aria-label="Page navigation">
+        <ul class="pagination pagination-lg justify-content-center page-shop">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </main>
     <!-- FIN DE LA SECCION PRINCIPAL DE LA WEB  -->
 
@@ -375,7 +428,9 @@
                 <a class="nav-link" href="../pages/shop.html">SHOP</a>
               </li>
               <li class="nav-item custom-navtext">
-                <a class="nav-link" href="../pages/register.html">REGISTRARSE</a>
+                <a class="nav-link" href="../pages/register.html"
+                  >REGISTRARSE</a
+                >
               </li>
               <li class="nav-item custom-navtext">
                 <a class="nav-link" href="../pages/login.html">LOGIN</a>

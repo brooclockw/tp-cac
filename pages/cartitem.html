@@ -86,11 +86,6 @@
                         >REGISTER</a
                       >
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="../pages/cartitem.html"
-                        >SHOP CART</a
-                      >
-                    </li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
                       <a class="dropdown-item" href="#">PURO FUNKO LINDO</a>
@@ -98,7 +93,7 @@
                   </ul>
                 </li>
                 <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="../pages/cartitem.html">
+                  <a class="nav-link active" href="../pages/cartitem.html">
                     <img
                       src="../img/icons/cart-icon.svg"
                       alt="icono de carrito"
@@ -118,71 +113,95 @@
 
     <!-- SECCION PRINCIPAL DE LA WEB -->
     <main>
-      <h2>CARRITO DE COMPRAS</h2>
-      <section>
-        <article>
-          <div>DETALLE DE PRODUCTO</div>
-          <div>CANTIDAD</div>
-          <div>TOTAL</div>
-        </article>
-        <article>
-          <picture>
-            <img
-              src="../img/star-wars/baby-yoda-1.webp"
-              alt="Baby Yoda Blue Ball Funko"
-            />
-            <a href="../item.html"></a>
-          </picture>
-          <div>
-            <h3>BABY YODA BLUEBALL</h3>
-            <p>STAR WARS</p>
-            <p>Precio: $ 1799,99</p>
-          </div>
-          <div>
-            <select name="cantidad-item" id="cantidad-item">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <div>
-            <p>$ 3599,98</p>
-            <picture>
-              <a href="" target="_blank"></a>
-              <img src="../img/icons/gg_close-o.svg" alt="" />
-            </picture>
-          </div>
-        </article>
-        <article>
-          <picture>
-            <img
-              src="../img/pokemon/pidgeotto-1.webp"
-              alt="Funko Pidgeotto de la linea Pokemon"
-            />
-            <a href="../pages/item.html"></a>
-          </picture>
-          <div>
-            <h3>PIDGEOTTO</h3>
-            <p>POKEMON</p>
-            <p>Precio: $ 1799,99</p>
-          </div>
-          <div>
-            <select name="cantidad-item" id="cantidad-item">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <div>
-            <p>$ 3599,98</p>
-            <picture>
-              <a href="" target="_blank"></a>
-              <img src="../img/icons/gg_close-o.svg" alt="" />
-            </picture>
-          </div>
-        </article>
+      <h2 class="tittle-cartpage">CARRITO DE COMPRAS</h2>
+      <div class="line-section line-section-shop"></div>
+      <!-- CAJAS DE CARRITO -->
+      <section class="container-fluid column">
+        <div class="row-cols-3 container-fluid cart-box">
+          <article class="d-flex row col-11 container-fluid grid-box-cart">
+            <div class="col-3">DETALLE DE PRODUCTO</div>
+            <div class="col-3">CANTIDAD</div>
+            <div class="col-3">TOTAL</div>
+            <div class="col-3"></div>
+          </article>
+          <article class="d-flex row col-11 grid-box-cart">
+            <div class="col-3 d-flex grid-cartpage">
+              <picture class="col-6">
+                <img
+                  src="../img/star-wars/baby-yoda-1.webp"
+                  alt="Baby Yoda Blue Ball Funko"
+                />
+                <a href="../item.html"></a>
+              </picture>
+              <div class="col-6">
+                <h3>BABY YODA BLUEBALL</h3>
+                <p>STAR WARS</p>
+                <p>Precio: $ 1799,99</p>
+              </div>
+            </div>
+            <div class="col-3 grid-cartpage">
+              <select name="cantidad-item" id="cantidad-item">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="col-3 grid-cartpage">
+              <p>$ 3599,98</p>
+            </div>
+            <div class="col-3 grid-cartpage">
+              <picture class="icon-delete-item">
+                <a href="" target="_blank"></a>
+                <img
+                  src="../img/icons/gg_close-o.svg"
+                  alt=""
+                  class="icon-delete-item"
+                />
+              </picture>
+            </div>
+          </article>
+
+          <article class="d-flex row col-11 grid-box-cart">
+            <div class="col-3 d-flex grid-cartpage">
+              <div class="col-6">
+                <picture>
+                  <img
+                    src="../img/pokemon/pidgeotto-1.webp"
+                    alt="Funko Pidgeotto de la linea Pokemon"
+                  />
+                  <a href="../pages/item.html"></a>
+                </picture>
+              </div>
+              <div class="col-6">
+                <h3>PIDGEOTTO</h3>
+                <p>POKEMON</p>
+                <p>Precio: $ 1799,99</p>
+              </div>
+            </div>
+            <div class="col-3 grid-cartpage">
+              <select name="cantidad-item" id="cantidad-item">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="col-3 grid-cartpage">
+              <p>$ 3599,98</p>
+            </div>
+            <div class="col-3 grid-cartpage">
+              <picture class="icon-delete-item">
+                <a href="" target="_blank"></a>
+                <img
+                  src="../img/icons/gg_close-o.svg"
+                  alt=""
+                  class="icon-delete-item"
+                />
+              </picture>
+            </div>
+          </article>
+        </div>
       </section>
       <section>
         <h2>RESUMEN</h2>
@@ -211,42 +230,44 @@
     </main>
     <!-- FIN DE LA SECCION PRINCIPAL DE LA WEB  -->
 
-      <!--INICIO FOOTER -->
-      <footer class="custom-footer">
-        <div class="custom-footer">
-          <section class="navbar container-fluid mb-0">
-            <nav class="d-flex row align-items-center container-fluid">
-              <ul class="mb-0 col-8 custom-text-footer">
-                <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="../pages/shop.html">SHOP</a>
-                </li>
-                <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="../pages/register.html">REGISTRARSE</a>
-                </li>
-                <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="../pages/login.html">LOGIN</a>
-                </li>
-                <li class="nav-item custom-navtext">
-                  <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
-                </li>
-              </ul>
-              <picture class="d-inline-block col-3 align-items-end">
-                <img
-                  src="../img/branding/isotype.svg"
-                  alt="Isotipo de la marca Funkoshop"
-                  width="auto"
-                  height="85"
-                  class="d-inline-block"
-                />
-              </picture>
-            </nav>
-          </section>
-          <p class="container-fluid row justify-content-center">
-            All rights reserved 2023 - Funkoshop & copyright
-          </p>
-        </div>
-      </footer>
-      <!--FIN FOOTER -->
+    <!--INICIO FOOTER -->
+    <footer class="custom-footer">
+      <div class="custom-footer">
+        <section class="navbar container-fluid mb-0">
+          <nav class="d-flex row align-items-center container-fluid">
+            <ul class="mb-0 col-8 custom-text-footer">
+              <li class="nav-item custom-navtext">
+                <a class="nav-link" href="../pages/shop.html">SHOP</a>
+              </li>
+              <li class="nav-item custom-navtext">
+                <a class="nav-link" href="../pages/register.html"
+                  >REGISTRARSE</a
+                >
+              </li>
+              <li class="nav-item custom-navtext">
+                <a class="nav-link" href="../pages/login.html">LOGIN</a>
+              </li>
+              <li class="nav-item custom-navtext">
+                <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+            <picture class="d-inline-block col-3 align-items-end">
+              <img
+                src="../img/branding/isotype.svg"
+                alt="Isotipo de la marca Funkoshop"
+                width="auto"
+                height="85"
+                class="d-inline-block"
+              />
+            </picture>
+          </nav>
+        </section>
+        <p class="container-fluid row justify-content-center">
+          All rights reserved 2023 - Funkoshop & copyright
+        </p>
+      </div>
+    </footer>
+    <!--FIN FOOTER -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

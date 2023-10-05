@@ -45,7 +45,7 @@
             <div class="d-flex row align-items-center">
               <ul class="navbar-nav me-2 align-items-center">
                 <li class="nav-item custom-navtext">
-                  <a class="nav-link" aria-current="page" href="./index.html"
+                  <a class="nav-link" aria-current="page" href="../index.html"
                     >HOME</a
                   >
                 </li>
@@ -129,28 +129,39 @@
             />
           </picture>
           <article>
-            <span>STAR WARS</span>
-            <h3 class="tittle-main-item">BABY YODA BLUEBALL</h3>
-            <p>
+            <span class="text-collection">STAR WARS</span>
+            <h3 class="tittle-item">BABY YODA BLUEBALL</h3>
+            <div class="line-section"></div>
+            <p class="description-item">
               Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga,
-              edición limitada
+              edición limitada.
             </p>
-            <span>$1799,99</span>
-            <div>
-              <input type="number" value="0" min="0" />
-              <button type="button">Agregar al Carrito</button>
+            <div class="price-item">
+              <span>$17999,99</span>
             </div>
             <div>
-              <a href="//">Ver métodos de pago</a
-              ><span>- 3 CUOTAS SIN INTERÉS</span>
+              <input
+                class="input-shop input-item"
+                type="number"
+                value="0"
+                min="0"
+              />
+              <button class="btn-buy-item" type="button">
+                Agregar al Carrito
+              </button>
+            </div>
+            <div>
+              <a href="//" class="ctas-item"
+                >Ver métodos de pago<span> - 3 CUOTAS SIN INTERÉS</span></a
+              >
             </div>
           </article>
         </section>
 
         <section>
-          <h2 class="releases-tittle" 0>PRODUCTOS RELACIONADOS</h2>
+          <h2 class="releases-tittle">PRODUCTOS RELACIONADOS</h2>
           <ul class="d-flex row container-fluid">
-            <li class="col-4">
+            <li class="col-3">
               <article>
                 <a
                   href="../pages/item.html"
@@ -171,7 +182,7 @@
                 </a>
               </article>
             </li>
-            <li class="col-4">
+            <li class="col-3">
               <article>
                 <a
                   href="../pages/item.html"
@@ -192,7 +203,7 @@
                 </a>
               </article>
             </li>
-            <li class="col-4">
+            <li class="col-3">
               <article>
                 <a
                   href="../pages/item.html"
@@ -207,6 +218,27 @@
                   <div class="col-12">
                     <p class="text-collection">HARRY POTTER</p>
                     <h4 class="name-item">LUNA LOVEGOOD LION MASK</h4>
+                    <p>$ 1799,99</p>
+                    <p class="ctas-item">3 CUOTAS SIN INTERÉS</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="col-3">
+              <article>
+                <a
+                  href="../pages/item.html"
+                  class="d-flex container-fluid row justify-content-center text-releases"
+                >
+                  <picture class="col-12">
+                    <img
+                      src="../img/star-wars/trooper-1.webp"
+                      alt="Figura coleccionable Funko de un  Stormtrooper"
+                    />
+                  </picture>
+                  <div class="col-12">
+                    <p class="text-collection">STAR WARS</p>
+                    <h4 class="name-item">STORMTROOPER LIGHTSABER</h4>
                     <p>$ 1799,99</p>
                     <p class="ctas-item">3 CUOTAS SIN INTERÉS</p>
                   </div>
@@ -229,7 +261,9 @@
                 <a class="nav-link" href="../pages/shop.html">SHOP</a>
               </li>
               <li class="nav-item custom-navtext">
-                <a class="nav-link" href="../pages/register.html">REGISTRARSE</a>
+                <a class="nav-link" href="../pages/register.html"
+                  >REGISTRARSE</a
+                >
               </li>
               <li class="nav-item custom-navtext">
                 <a class="nav-link" href="../pages/login.html">LOGIN</a>
